@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1502942038040
+Build-Jdk: 1.8.0_131
+Built-By: chancelin
+Bundle-Description: org.apache.sling - project0
+Bundle-ManifestVersion: 2
+Bundle-Name: project0
+Bundle-SymbolicName: org.apache.sling.project0
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Sling-Initial-Content: SLING-INF/ui/views;overwrite:=true;uninstall:=tru
+ e;path:=/ui/views,SLING-INF/content;overwrite:=true;uninstall:=true;pat
+ h:=/content
+Sling-Nodetypes: SLING-INF/nodetypes/nodetypes.cnd
+Tool: Bnd-3.0.0.201509101326

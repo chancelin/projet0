@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head data-sly-include="${'/ui/views/partials/head.html'}"></head>
+	
+	 <body data-sly-use.login="/ui/data/login.js">
+        <div class="cps row " id="login">
+
+            <header class="row"> </header>
+            
+            <section class="row env">
+
+                <section class="wrapper">
+
+                    <section class="pull-left  text-center logo">
+                        <img src="ui/assets/images/logo.png" alt="votre logo ici..."/>
+                        <p>
+                            &copy; ${login.company}
+                        </p>
+                    </section>
+
+                    <section class="pull-left params">
+
+                        <h3>  ${login.titreConnect} </h3>
+
+                        <p class="error_msg">
+                            <!-- error connexion -->
+                        </p>
+
+                        <form action="/j_security_check" method="post">
+
+                            <aside class="field_input">
+                                <p>
+                                    <input type="text" class="form-control" placeholder="Email"/>
+                                </p>
+                                <p>
+                                    <input type="text" class="form-control" placeholder="Password"/>
+                                </p>
+                                <p class="checkbox_text">
+
+                                    <input type="checkbox" class="" />
+
+                                    <span> ${login.savePaswrd} </span>
+                                </p>
+
+                                <p class="text-right connect">
+                                    <button type="button" class="btn btn-primary ">${login.connect}</button>
+                                </p>
+
+                            </aside>
+
+                        </form>
+
+                    </section>
+
+                </section>
+
+            </section>
+			
+			<footer class="foo"  data-sly-include="${'/ui/views/partials/footer.html'}"></footer>
+
+        </div>
+
+    </body>
+</html>
